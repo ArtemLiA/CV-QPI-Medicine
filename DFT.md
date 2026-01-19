@@ -3,11 +3,8 @@
 ### **1. Дискретное преобразование Фурье (ДПФ, DFT)**
 
 Для изображения $N \times M$:
-$$
-X(u, v) = \sum\limits_{x=0}^N \sum\limits_{y=0}^M I(x, y) e^{-2i\pi
-\left(u \cdot \frac{x}{N} + v \cdot \frac{y}{M}\right)
-}
-$$
+
+$$X(u, v) = \sum\limits_{x=0}^N \sum\limits_{y=0}^M I(x, y) e^{-2i\pi\left(u \cdot \frac{x}{N} + v \cdot \frac{y}{M}\right)}$$
 
 Вычислительная сложность наивной реализации ДПФ для 2D - $O(N^2 M^2)$, однако на практике вычисления как две серии 1D $→$ вычислительная сложность $O(N^2 M + N M^2)$
 
